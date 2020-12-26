@@ -1,0 +1,21 @@
+{
+  "name": "svenskbot",
+  "version": "1.0.0",
+  "description": "discord bot to train swedish vocabulary",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node index.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "svensk",
+    "js"
+  ],
+  "author": "Jens Breitung",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "pg": "^8.5.1"
+  }
+}
