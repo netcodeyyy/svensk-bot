@@ -151,6 +151,8 @@ module.exports = {
             }
         }
         else {
+            const args = message.content.split(' ').map((x) => {return x.toLowerCase()});
+            const cmd = args.shift();
             if (cmd === 'h') {
                 showHelp(message);
                 core.reaskQuestion(message);
@@ -161,8 +163,6 @@ module.exports = {
                     message.reply(UNKNOWN_MSG);
                 }
                 else {
-                    const args = message.content.split(' ').map((x) => {return x.toLowerCase()});
-                    const cmd = args.shift();
                     if (cmd === 'k') {
                         await setSelection(message, cmd, args, 'chapter');
                         core.reaskQuestion(message);
